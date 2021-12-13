@@ -1,0 +1,25 @@
+{
+  "name": "license-manager",
+  "version": "1.0.0",
+  "description": "no description",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "MdN",
+  "license": "MIT",
+  "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.5",
+    "body-parser": "^1.19.1",
+    "dateformat": "^5.0.2",
+    "express": "^4.17.1",
+    "express-handlebars": "^6.0.2",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.12.0-beta.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
