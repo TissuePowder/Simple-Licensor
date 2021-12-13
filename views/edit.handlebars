@@ -1,0 +1,35 @@
+<section id="add" class="container">
+    <div class="form-wrap" style="width:550px">
+      <h1>Edit Serial Key</h1>
+      {{!-- {{#each keys}} --}}
+        <form action="/keys/edit" method="POST">
+
+            <div class="input-group">
+            <label for="key">Key</label>
+            <input type="text" name="key" id="key" class="input-box" value={{keys.dataValues.key}}>
+            </div>
+
+            <div class="input-group">
+            <label for="type">Type</label>
+            <input type="text" name="type" id="type" class="input-box" value={{keys.dataValues.type}}>
+            </div>
+
+            <div class="input-group">
+            <label for="duration">Duration (in days)</label>
+            <input type="number" name="duration" id="duration" class="input-box" value={{keys.dataValues.duration}}>
+            </div>
+
+            <div class="input-group">
+            <label for="condition">Condition</label>
+            <input type="text" name="condition" id="condition" class="input-box" value={{keys.dataValues.condition}}>
+            </div>
+
+            <input type="hidden" name="id" value={{keys.dataValues.id}}>
+
+
+            <input type="submit" value="Edit Key" class="btn btn-reverse">
+        </form>
+        {{!-- {{/each}} --}}
+
+    </div>
+  </section>

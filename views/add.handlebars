@@ -1,0 +1,37 @@
+<section id="add" class="container">
+    <div class="form-wrap" style="width:550px">
+      <h1>Add A Serial Key</h1>
+      {{!-- <p>Your contact email will be shared with registered users to apply to your gig</p> --}}
+      {{#each errors}}
+        <div class="error">
+          <p>{{text}}</p>
+        </div>
+      {{/each}}
+
+      <form action="/keys/add" method="POST">
+
+        <div class="input-group">
+          <label for="key">Key</label>
+          <input type="text" name="key" id="key" class="input-box" value={{key}}>
+        </div>
+
+        <div class="input-group">
+          <label for="type">Type</label>
+          <input type="text" name="type" id="type" class="input-box" value={{type}}>
+        </div>
+
+        <div class="input-group">
+          <label for="duration">Duration (in days)</label>
+          <input type="number" name="duration" id="duration" class="input-box" value={{duration}}>
+        </div>
+
+        <div class="input-group">
+          <label for="condition">Condition</label>
+          <input type="text" name="condition" id="condition" class="input-box" value={{condition}}>
+        </div>
+
+
+        <input type="submit" value="Add Key" class="btn btn-reverse">
+      </form>
+    </div>
+  </section>

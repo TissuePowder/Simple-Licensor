@@ -1,0 +1,75 @@
+{{!-- <link rel="stylesheet" href="/semantic/semantic.min.css"> --}}
+
+
+{{!-- <section id="keys" class="container"> --}}
+
+<h1 style="text-align: center;">All Keys</h1>
+
+<div style="margin: auto;display:flex;justify-content:center;margin-bottom:20px">
+  <form action="/keys/search" class="search-form">
+      <i class="fas fa-search"></i>
+      <input type="search" name="term" placeholder="serial key...">
+      <input type="submit" value="Search">
+</form>
+</div>
+
+<section class="container">
+
+  <table>
+    <tr>
+      <th>Key ID</th>
+      <th>Serial Key</th>
+      <th>Type</th>
+      <th>Created At</th>
+      <th>Updated At</th>
+      <th>Activated At</th>
+      <th>Duration</th>
+      <th>Condition</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    {{#each keys}}
+    <tr>
+      <td>{{id}}</td>
+      <td>{{key}}</td>
+      <td>{{type}}</td>
+      <td>{{createdAt}}</td>
+      <td>{{updatedAt}}</td>
+      <td>{{ActivatedAt}}</td>
+      <td>{{duration}}</td>
+      <td>{{condition}}</td>
+      <td><button>Edit</button></td>
+      <td><button>Delete</button></td>
+      <form action="/keys/delete" method="post" style="display: none;">
+        <input type="hidden" name="id" value={{id}}>
+      </form>
+      <form action="/keys/edit" method="get" style="display: none;">
+        <input type="hidden" name="id" value={{id}}>
+      </form>
+    </tr>
+    {{/each}}
+  </table>
+
+</section>
+
+<script>
+  let tbl = document.getElementsByTagName('table')[0];
+  tbl.addEventListener('click', (e) => {
+    let trgt = e.target;
+    let row = trgt.parentNode.parentNode;
+    console.log(row);
+    if(trgt.textContent === 'Delete'){
+      row.children[10].submit();
+    }
+    else if(trgt.textContent === 'Edit') {
+      row.children[12].submit();
+      console.log(row.children);
+    }
+
+    //row.remove();
+  });
+
+
+</script>
+
+
