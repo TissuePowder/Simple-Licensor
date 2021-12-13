@@ -1,0 +1,11 @@
+Hardware:
+	Bios Version	- Win32_Bios/Version
+	HardSerial		- Win32_PhysicalMedia/SerialNumber
+	Processor ID	- Win32_Processor/ProcessorID
+	BaseBoard		- Win32_BaseBoard/Manufacturer
+					- Win32_BaseBoard/Product
+	Disk Signature	- Win32_DiskDrive/Signature
+	Video Caption	- Win32_VideoController/Caption
+	Hard Serial		- Win32_PhysicalMedia/SerialNumber
+Software:
+	Windows Serial	- Win32_OperatingSystem/SerialNumber
