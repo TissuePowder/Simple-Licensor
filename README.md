@@ -12,6 +12,10 @@ There will be three sectors to discuss features.
 2. UI for Create, Read, Update and Delete (CRUD) operations.
 3. Recording each serial key with it's creation date, activation date, license type, duration length, condition etc.
 
+![key table](blob/key_table.png?raw=true)
+
+![add key](blob/add_key.png?raw=true)
+
 ### Library (DLL) features
 1. Add arbitrary trial day limitation to the software.
 2. Option to select either onine key validation or offline.
@@ -27,10 +31,14 @@ There will be three sectors to discuss features.
 5. Using TripleDES encryption to generate serial keys.
 6. Different license level to lock functions for different usecase.
 
+![registration dialog](blob/registration_dialog.png?raw=true)
+
 ### Offline Keygen features
 1. Generate serial keys for offline validation.
 2. Take users' hardware ID and software identifier into account.
 3. Generate valid keys for different amount of days.
+
+![key generator](blob/key_generator.png?raw=true)
 
 
 ## How to install and use
