@@ -114,3 +114,8 @@ if (RT != AppLocker.RunTypes.Expired) {
 ### Using the offline Serial Maker
 1. Use the identifier and client's hardware ID to generate a serial key.
 2. Use to serial in your app's trial registration dialog to register.
+
+## Video Demonstration
+https://youtu.be/q7yLRADEeH8
+
+
