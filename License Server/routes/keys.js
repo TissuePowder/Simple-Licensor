@@ -70,7 +70,7 @@ router.get('/search', (req, res) => {
     let { term } = req.query;
 
     // Make lowercase
-    term = term.toLowerCase();
+    //term = term.toLowerCase();
 
     Keys.findAll({ where: { key: { [Op.like]: '%' + term + '%' } } })
       .then(keys => res.render('keys', { keys }))
@@ -96,7 +96,7 @@ router.get('/check', (req, res) => {
     let { term } = req.query;
 
     // Make lowercase
-    term = term.toLowerCase();
+    //term = term.toLowerCase();
 
     Keys.findOne({ where: { key: term} } )
       .then(keys => res.send(keys))
