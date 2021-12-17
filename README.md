@@ -10,7 +10,7 @@ There will be three sectors to discuss features.
 ### Server-side features
 1. A database for managing serial keys.
 2. UI for Create, Read, Update and Delete (CRUD) operations.
-3. Recording each serial key with it's creation date, activation date, license type, duration length, condition etc.
+3. Recording each serial key with it's creation date, activation date, license type, duration length, condition, status etc.
 
 ![key table](blob/key_table.png?raw=true)
 
@@ -29,7 +29,7 @@ There will be three sectors to discuss features.
    - BIOS
    - Operating System
 5. Using TripleDES encryption to generate serial keys.
-6. Different license level to lock functions for different usecase.
+6. Different license level and type to lock functions for different usecase.
 
 ![registration dialog](blob/registration_dialog.png?raw=true)
 
